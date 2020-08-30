@@ -28,6 +28,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.nav_item {
+    transition: 1s;
+}
+.nav_item:hover {
+    background-color: red;
+}
+
 ul.menu li {
     font-size: 16px;
     padding: 15px 5px;
@@ -71,7 +78,7 @@ ul.menu {
 }
 
 .bar_menu {
-    background-color: red;
+    background-color: #ff0000;
     display: inline-block;
     height: 2px;
     position: relative;
@@ -95,7 +102,7 @@ ul.menu {
     top: -5px;
 }
 
-.item_list.active {
+.nav_item.active {
     display: block;
 }
 
