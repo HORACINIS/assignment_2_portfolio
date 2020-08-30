@@ -20,6 +20,8 @@ ul.menu {
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bolder;
+    /* font-family: 'Russo One', sans-serif; */
 }
 
 nav a:hover {
@@ -38,4 +40,92 @@ ul.menu li a {
 .name a {
     font-size: 20px;
     border-bottom: 1px #444 solid;
+}
+
+/* mobile menu & content */
+
+ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name a {
+    border-bottom: none;
+}
+
+.toggle {
+    order: 1;
+}
+
+.nav_item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.bar_menu {
+    background-color: red;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bar_menu::before, .bar_menu::after {
+    background-color: red;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bar_menu::before {
+    top: 5px;
+}
+
+.bar_menu::after {
+    top: -5px;
+}
+
+.item_list.active {
+    display: block;
+}
+
+/* tablet menu - & content */
+
+@media all and (min-width:468px) {
+    ul.bar_menu {
+        justify-content: center;
+    }
+    .name {
+        flex: 1;
+    }
+}
+
+@media all and (min-width:768px) {
+    .nav_item {
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    ul.name {
+        font-size: 1.2em;
+    }
+
+    ul.menu li {
+        padding: 15px 10px;
+        font-size: 1.2em;
+    }
 }
