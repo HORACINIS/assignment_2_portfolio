@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+nav {
+    background-color: #ffb300;
+    padding: 5px 20px;
+}
+
+ul.menu {
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ul.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+ul.menu li a {
+    display: block;
+}
+
+.name a {
+    font-size: 20px;
+    border-bottom: 1px #444 solid;
+}
