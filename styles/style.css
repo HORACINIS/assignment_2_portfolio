@@ -193,6 +193,23 @@ ul.menu {
     transform: scale(0.95, 0.95);
 }
 
+.blog_post {
+    text-align: left;
+    margin: 20px;
+}
+
+
+.blog_post img {
+    display: inline-block;
+    width: 100%;
+}
+
+.blog_post section {
+    margin-bottom: 30px;
+}
+
+
+
 
 /* tablet & mobile view */
 
@@ -242,6 +259,11 @@ ul.menu {
 
     .blog_box img{
         width: 70%;
+    }
+
+    .blog_post img {
+        display: inline-block;
+        width: 80%;
     }
 }
 
