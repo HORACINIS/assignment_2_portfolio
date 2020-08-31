@@ -49,6 +49,17 @@ ul.menu li a {
     border-bottom: 1px #444 solid;
 }
 
+.line_across {
+    height: 5px;
+    /* width: auto; */
+    background-color: red;
+    margin-top: 1px;
+
+    width: 5%;
+    transition: 5s;
+    transform: scaleX(39.1);
+}
+
 /* mobile menu & content */
 
 ul.menu {
