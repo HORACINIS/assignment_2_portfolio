@@ -60,7 +60,42 @@ ul.menu li a {
     transform: scaleX(39.1);
 }
 
-/* mobile menu & content */
+
+
+/* giving the header the typing effect */
+.header_title {
+    width: max-content;
+    font-size: 2em;
+    text-align: center;
+    color: red;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+
+
+/* mobile menu & content (hidden)*/
 
 ul.menu {
     display: flex;
@@ -117,6 +152,18 @@ ul.menu {
     display: block;
 }
 
+.header_title {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.commandLine_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
 /* tablet menu - & content */
 
 @media all and (min-width:468px) {
@@ -126,6 +173,11 @@ ul.menu {
     .name {
         flex: 1;
     }
+
+    .commandLine_img {
+        width: 100px;
+    }
+    
 }
 
 @media all and (min-width:768px) {
@@ -145,5 +197,9 @@ ul.menu {
     ul.menu li {
         padding: 15px 10px;
         font-size: 1.2em;
+    }
+
+    .commandLine_img {
+        width: 200px;
     }
 }
