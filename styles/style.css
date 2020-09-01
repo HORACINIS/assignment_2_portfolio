@@ -21,18 +21,21 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
-    /* font-family: 'Russo One', sans-serif; */
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-.nav_item {
+.nav_item, .name {
     transition: 1s;
 }
 .nav_item:hover {
     background-color: red;
+}
+.name a:hover {
+    color:black;
+    text-decoration: none;
 }
 
 ul.menu li {
@@ -108,9 +111,9 @@ ul.menu {
     border-bottom: none;
 }
 
-.toggle {
+/* .toggle {
     order: 1;
-}
+} */
 
 .nav_item {
     width: 100%;
@@ -123,7 +126,7 @@ ul.menu {
     cursor: pointer;
 }
 
-.bar_menu {
+.menu_bar {
     background-color: #ff0000;
     display: inline-block;
     height: 2px;
@@ -131,7 +134,7 @@ ul.menu {
     width: 18px;
 }
 
-.bar_menu::before, .bar_menu::after {
+.menu_bar::before, .menu_bar::after {
     background-color: red;
     content: "";
     display: inline-block;
@@ -140,11 +143,11 @@ ul.menu {
     width: 18px;
 }
 
-.bar_menu::before {
+.menu_bar::before {
     top: 5px;
 }
 
-.bar_menu::after {
+.menu_bar::after {
     top: -5px;
 }
 
@@ -208,13 +211,27 @@ ul.menu {
     margin-bottom: 30px;
 }
 
+.skills_container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-items: left;
+    background-color: #ffb300;
+    margin-bottom: 40px;
+}
+.skills_container div {
+    margin: 20px auto;
+    width: 50%;
+    padding: 10px;
+}
 
 
 
 /* tablet & mobile view */
 
 @media all and (min-width:468px) {
-    ul.bar_menu {
+    ul.menu_bar {
         justify-content: center;
     }
     .name {
@@ -223,7 +240,7 @@ ul.menu {
 
     .commandLine_img {
         width: 100px;
-    }
+    }  
 }
 
 @media all and (min-width:768px) {
@@ -264,6 +281,13 @@ ul.menu {
     .blog_post img {
         display: inline-block;
         width: 80%;
+    }
+
+    .skills_container {
+        flex-direction: row;
+        margin-top: 50px min-content;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
 
