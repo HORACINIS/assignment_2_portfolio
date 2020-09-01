@@ -211,7 +211,7 @@ ul.menu {
     margin-bottom: 30px;
 }
 
-.skills_container {
+.container {
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -220,7 +220,7 @@ ul.menu {
     background-color: #ffb300;
     margin-bottom: 40px;
 }
-.skills_container div {
+.container div {
     margin: 20px auto;
     width: 50%;
     padding: 10px;
@@ -283,7 +283,7 @@ ul.menu {
         width: 80%;
     }
 
-    .skills_container {
+    .container {
         flex-direction: row;
         margin-top: 50px min-content;
         padding-top: 80px;
