@@ -212,7 +212,6 @@ ul.menu {
 }
 
 .container {
-    padding: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
