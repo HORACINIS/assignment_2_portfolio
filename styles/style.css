@@ -28,10 +28,11 @@ nav a:hover {
 }
 
 .nav_item, .name {
-    transition: 1s;
+    transition: 0.8s;
 }
 .nav_item:hover {
     background-color: red;
+    transform: scale(1.05);
 }
 .name a:hover {
     color:black;
@@ -54,13 +55,21 @@ ul.menu li a {
 
 .line_across {
     height: 5px;
-    /* width: auto; */
     background-color: red;
     margin-top: 1px;
-
-    width: 5%;
-    transition: 5s;
-    transform: scaleX(39.1);
+    width: 100%;
+    animation: line-stretching 2s linear forwards;
+}
+@keyframes line-stretching {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 
@@ -73,7 +82,7 @@ ul.menu li a {
     color: red;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange;
+    border-right: .15em solid #ffb300;
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
@@ -83,9 +92,7 @@ ul.menu li a {
     /* Adjust as needed */
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
-
 /* The typing effect */
-
 @keyframes typing {
     from {
         width: 0
@@ -94,8 +101,6 @@ ul.menu li a {
         width: 100%
     }
 }
-
-
 
 
 /* mobile menu & content(hidden)*/
@@ -151,9 +156,24 @@ ul.menu {
     top: -5px;
 }
 
-.nav_item.active {
+.nav_item.active, .menu {
     display: block;
+    animation: nav-items-scale 0.5s linear forwards;
 }
+@keyframes nav-items-scale {
+    0% {
+        transform: scaleY(0.1);
+    }
+    50% {
+        transform: scaleY(0.7);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+
 
 .header_title {
     font-size: 30px;
@@ -167,6 +187,35 @@ ul.menu {
     margin-right: auto;
     width: 100px;
 }
+
+.intro_text {
+    background-color: #ffb300;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.intro_text div {
+    animation: intro-text-zoomin 4s linear forwards;
+}
+@keyframes intro-text-zoomin{
+    0% {
+        font-family: 'Special Elite', cursive;
+        filter: blur(2px);
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(0.8);
+        
+    }
+    75% {
+        filter: blur(5px);
+    }
+    100% {
+        transform: scale(1);
+        font-family: 'Special Elite', cursive;
+    }
+}
+
 
 .blogs_list {
     display: flex;

@@ -11,6 +11,5 @@ const menu_bar = document.querySelector('.menu');
                         li.classList.add('active');
                     }
                 }
-                console.log(event.target)
             }
         });
