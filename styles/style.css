@@ -1,4 +1,4 @@
-* {
+* { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,46 +12,56 @@ nav {
     background-color: #ffb300;
     padding: 5px 20px;
 }
+/* parent element for navigation list items */
 
 ul.menu {
     list-style-type: none;
 }
+/* removing bullets for menu list items in the ul*/
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
+/* changing properties for the menu list items */
 
 nav a:hover {
     text-decoration: underline;
 }
+/* adding underline when hovering over a menu list item */
 
 .nav_item, .name {
     transition: 0.8s;
 }
+/* added transition time for menu list items and my name*/
+
 .nav_item:hover {
     background-color: red;
     transform: scale(1.05);
 }
+/* when hovering over menu item, background colour changes to red and it scales .05 times their size  */
+
 .name a:hover {
     color:black;
     text-decoration: none;
 }
+/* when hovering over my name, its colour changes from white(standard) to black and removes bottom border */
 
 ul.menu li {
-    font-size: 16px;
     padding: 15px 5px;
 }
+/* adding padding around menu items */
 
 ul.menu li a {
     display: block;
 }
+/* changes the a tags from inline display to block display*/
 
 .name a {
     font-size: 20px;
-    border-bottom: 1px #444 solid;
 }
+/* increasing default font size of 16px to 20px for name */
 
 .line_across {
     height: 5px;
@@ -60,6 +70,7 @@ ul.menu li a {
     width: 100%;
     animation: line-stretching 2s linear forwards;
 }
+/* div properties for animated line that stretches across below menu bar */
 @keyframes line-stretching {
     0% {
         width: 0%;
@@ -71,10 +82,10 @@ ul.menu li a {
         width: 100%;
     }
 }
+/* stretching red line animation properties */
 
 
-
-/* giving the header the typing effect */
+/* giving main header the typing effect */
 .header_title {
     width: max-content;
     font-size: 2em;
@@ -92,18 +103,33 @@ ul.menu li a {
     /* Adjust as needed */
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
-/* The typing effect */
+
 @keyframes typing {
     from {
-        width: 0
+        width: 0%;
     }
     to {
-        width: 100%
+        width: 100%;
+    }
+}
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent 
+    }
+    50% {
+        border-color: orange; 
     }
 }
 
+.header_title {
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+/* adding top and bottom margins to header */
 
-/* mobile menu & content(hidden)*/
+
+
+/* mobile menu bar (hidden)*/
 
 ul.menu {
     display: flex;
@@ -112,18 +138,10 @@ ul.menu {
     align-items: center;
 }
 
-.name a {
-    border-bottom: none;
-}
-
-/* .toggle {
-    order: 1;
-} */
-
 .nav_item {
     width: 100%;
     text-align: center;
-    order: 2;
+    order: 1;
     display: none;
 }
 
@@ -138,6 +156,7 @@ ul.menu {
     position: relative;
     width: 18px;
 }
+/* hamburger menu - middle line */
 
 .menu_bar::before, .menu_bar::after {
     background-color: red;
@@ -147,19 +166,24 @@ ul.menu {
     position: absolute;
     width: 18px;
 }
+/* hamburger menu - top and bottom lines */
 
 .menu_bar::before {
     top: 5px;
 }
+/* hamburger menu - bottom line MOVED to bottom */
 
 .menu_bar::after {
     top: -5px;
 }
+/* hamburger menu - top line MOVED to top*/
 
 .nav_item.active, .menu {
     display: block;
     animation: nav-items-scale 0.5s linear forwards;
 }
+/* mobile menu version will be display when list items contain both nav_item and active classes */
+
 @keyframes nav-items-scale {
     0% {
         transform: scaleY(0.1);
@@ -170,13 +194,6 @@ ul.menu {
     100% {
         transform: scaleY(1);
     }
-}
-
-
-.header_title {
-    font-size: 30px;
-    margin-bottom: 40px;
-    margin-top: 30px;
 }
 
 .commandLine_img {
@@ -271,6 +288,18 @@ ul.menu {
     padding: 10px;
 }
 
+.about_me_top_part {
+    display: flex;
+}
+
+.about_me {
+    background-color: #ffb300;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+
+
 
 
 /* tablet & mobile view */
@@ -283,12 +312,13 @@ ul.menu {
         flex: 1;
     }
 
-    .commandLine_img {
-        width: 100px;
-    }  
-    
     .blog_post div {
         max-width: 80%;
+    }
+
+    .intro_text {
+        padding-top: 150px;
+        padding-bottom: 150px;
     }
 }
 
@@ -311,9 +341,6 @@ ul.menu {
         font-size: 1.2em;
     }
 
-    .commandLine_img {
-        width: 200px;
-    }
 
     .blogs_list {
         flex-wrap: nowrap;
@@ -337,6 +364,10 @@ ul.menu {
         margin-top: 50px min-content;
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+
+    .about_me img {
+        width: 200px;
     }
 }
 
