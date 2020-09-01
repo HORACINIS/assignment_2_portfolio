@@ -173,8 +173,6 @@ ul.menu {
 }
 
 
-
-
 .header_title {
     font-size: 30px;
     margin-bottom: 40px;
@@ -236,7 +234,7 @@ ul.menu {
 .blog_box img{
     width: 80%;
     height: auto;
-    filter: grayscale(100%);
+    filter: grayscale(100%) drop-shadow(8px 8px 10px black);
     transition: 0.90s;
 }
 
@@ -249,7 +247,6 @@ ul.menu {
     text-align: left;
     margin: 20px;
 }
-
 
 .blog_post img {
     display: inline-block;
@@ -289,6 +286,10 @@ ul.menu {
     .commandLine_img {
         width: 100px;
     }  
+    
+    .blog_post div {
+        max-width: 80%;
+    }
 }
 
 @media all and (min-width:768px) {
