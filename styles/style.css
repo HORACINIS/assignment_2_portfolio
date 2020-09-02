@@ -327,10 +327,12 @@ ul.menu {
         display: block;
         width: auto;
     }
+    /* making the list items appear again and with width auto they'll move up in the menu bar */
 
     .toggle {
         display: none;
     }
+    /* hiding the hamburger button */
 
     ul.name {
         font-size: 1.2em;
@@ -340,7 +342,7 @@ ul.menu {
         padding: 15px 10px;
         font-size: 1.2em;
     }
-
+    /* adding space between menu list items in the menu bar */
 
     .blogs_list {
         flex-wrap: nowrap;
