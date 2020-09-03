@@ -84,8 +84,6 @@ ul.menu li a {
 }
 /* stretching red line animation properties */
 
-
-/* giving main header the typing effect */
 .header_title {
     width: max-content;
     font-size: 2em;
@@ -103,7 +101,6 @@ ul.menu li a {
     /* Adjust as needed */
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
-
 @keyframes typing {
     from {
         width: 0%;
@@ -120,17 +117,16 @@ ul.menu li a {
         border-color: orange; 
     }
 }
+/* giving main header the typing effect */
 
 .header_title {
     margin-bottom: 80px;
     margin-top: 30px;
 }
-/* adding top and bottom margins to header */
+/* adding top and bottom margins to main headers */
 
 
-
-/* mobile menu bar (hidden)*/
-
+/* BELOW - mobile menu bar (hidden when in desktop view)*/
 ul.menu {
     display: flex;
     flex-wrap: wrap;
@@ -171,18 +167,18 @@ ul.menu {
 .menu_bar::before {
     top: 5px;
 }
-/* hamburger menu - bottom line MOVED to bottom */
+/* hamburger menu - bottom line, placed to bottom */
 
 .menu_bar::after {
     top: -5px;
 }
-/* hamburger menu - top line MOVED to top*/
+/* hamburger menu - top line, placed to top*/
 
 .nav_item.active, .menu {
     display: block;
     animation: nav-items-scale 0.5s linear forwards;
 }
-/* mobile menu version will be display when list items contain both nav_item and active classes */
+/* mobile menu version will be displayed when list items contain both nav_item and active classes */
 
 @keyframes nav-items-scale {
     0% {
@@ -202,6 +198,7 @@ ul.menu {
     margin-right: auto;
     width: 100px;
 }
+/* command line icon in home page, centered */
 
 .intro_text {
     background-color: #ffb300;
@@ -230,6 +227,7 @@ ul.menu {
         font-family: 'Special Elite', cursive;
     }
 }
+/* above - intro text in home page with the blur and scale animation effects */
 
 
 .blogs_list {
@@ -261,7 +259,7 @@ ul.menu {
 }
 
 .blog_post {
-    text-align: left;
+    text-align: center;
     margin: 20px;
 }
 
@@ -278,25 +276,35 @@ ul.menu {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-items: left;
     background-color: #ffb300;
     margin-bottom: 40px;
 }
 .container div {
     margin: 20px auto;
-    width: 50%;
+    /* width: 50%; */
     padding: 10px;
 }
-
-.about_me_top_part {
-    display: flex;
+.container a:link, .container a:visited {
+    color: red;
 }
 
-.about_me {
-    background-color: #ffb300;
-    padding-bottom: 80px;
-    padding-top: 80px;
+.container a:hover {
+    color: blue;
 }
+
+.container.bounce_effect img:hover {
+    animation: bounce 0.8s linear;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {
+        transform: translateY(-30px);
+    } 
+    60% {
+        transform: translateY(-15px);
+    } 
+} 
+/* making the icons in the contact me page bounce when hovering over them */
 
 
 
@@ -313,7 +321,7 @@ ul.menu {
     }
 
     .blog_post div {
-        max-width: 80%;
+        max-width: 90%;
     }
 
     .intro_text {
@@ -344,6 +352,8 @@ ul.menu {
     }
     /* adding space between menu list items in the menu bar */
 
+
+
     .blogs_list {
         flex-wrap: nowrap;
     }
@@ -353,23 +363,20 @@ ul.menu {
     }
 
     .blog_box img{
-        width: 70%;
+        width: 40%;
     }
 
-    .blog_post img {
+    .blog_post div {
         display: inline-block;
-        width: 80%;
+        width: 65%;
     }
 
-    .container {
+    .container
+    {
         flex-direction: row;
         margin-top: 50px min-content;
         padding-top: 80px;
         padding-bottom: 80px;
-    }
-
-    .about_me img {
-        width: 200px;
     }
 }
 
