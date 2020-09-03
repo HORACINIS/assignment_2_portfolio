@@ -378,5 +378,17 @@ ul.menu {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+
+    .about_me {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .about_me p {
+        word-spacing: 3px;
+    }
+    .about_me img {
+        margin-bottom: 5px;
+    }
+
 }
 

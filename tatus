@@ -1,0 +1,66 @@
+[1mdiff --git a/pages/about_me.html b/pages/about_me.html[m
+[1mindex 1b050a2..dba97a1 100644[m
+[1m--- a/pages/about_me.html[m
+[1m+++ b/pages/about_me.html[m
+[36m@@ -32,22 +32,27 @@[m
+             <h1 class="header_title">About me</h1>[m
+         </header>[m
+ [m
+[31m-        <section class="container">[m
+[32m+[m[32m        <section class="about_me container">[m[41m[m
+             <div>[m
+                 <div><img src="../images/person_icon.png" alt=""></div>[m
+[31m-                <div>[m
+[31m-                    <p><strong>about me...</strong></p>[m
+[31m-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, porro.</p>[m
+[31m-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>[m
+[31m-                    <p>Lorem ipsum dolor sit amet consectetur.</p>[m
+[31m-                </div>[m
+             </div>[m
+             <div>[m
+[31m-                <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong></p>[m
+[31m-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae itaque deleniti quisquam commodi consectetur possimus nemo accusamus fugit numquam!</p>[m
+[31m-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error consectetur necessitatibus nemo excepturi reprehenderit doloribus dignissimos!</p>[m
+[31m-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit!</p>[m
+[31m-                <p>Lorem ipsum dolor sit amet.</p>[m
+[32m+[m[32m                <p><strong>Horacio Moran</strong></p>[m[41m[m
+[32m+[m[32m                <p><em>Actual full name: Horacio Alejandro Moran Espinoza</em></p>[m[41m[m
+[32m+[m[32m                <br>[m[41m[m
+[32m+[m[32m                <p>My friends call me Horacinis. I was born in Santiago, Chile 34 years ago.</p>[m[41m[m
+[32m+[m[32m                <p>I moved to Australia in 2003 and I call it now <em>mi casa.</em></p>[m[41m[m
+[32m+[m[32m                <p>My native language is Spanish.</p>[m[41m[m
+[32m+[m[32m                <p>I am a sociable person; I enjoy spending time with family and friends.</p>[m[41m[m
+[32m+[m[32m                <p>I like playing guitar or trying to lol as I can only play a few basic songs.</p>[m[41m[m
+[32m+[m[32m                <br>[m[41m[m
+[32m+[m[32m                <p>I am a curious human being. When I was little I would open some of my toys to see what was in them and how they worked.</p>[m[41m[m
+[32m+[m[32m                <p>I love technology. I am always watching reviews about the latest technology that is coming out.</p>[m[41m[m
+[32m+[m[32m                <br>[m[41m[m
+[32m+[m[32m                <p>I have been a barista for over 5 years now and I urgently need a challenge.</p>[m[41m[m
+[32m+[m[32m                <p>For a few months I taught myself some JavaScript and I discovered that I really enjoyed learning it.</p>[m[41m[m
+[32m+[m[32m                <p>so, I made the decision of my life to do what I strongly believe is my passion, programming</p>[m[41m[m
+[32m+[m[32m                <p>I am currently studying at Coder Academy Sydney to become a full stack developer.</p>[m[41m[m
+             </div>[m
+ [m
+         </section>[m
+[1mdiff --git a/styles/style.css b/styles/style.css[m
+[1mindex 8c7a53c..fcf7ded 100644[m
+[1m--- a/styles/style.css[m
+[1m+++ b/styles/style.css[m
+[36m@@ -378,5 +378,17 @@[m [mul.menu {[m
+         padding-top: 80px;[m
+         padding-bottom: 80px;[m
+     }[m
+[32m+[m[41m[m
+[32m+[m[32m    .about_me {[m[41m[m
+[32m+[m[32m        padding-left: 80px;[m[41m[m
+[32m+[m[32m        padding-right: 80px;[m[41m[m
+[32m+[m[32m    }[m[41m[m
+[32m+[m[32m    .about_me p {[m[41m[m
+[32m+[m[32m        word-spacing: 3px;[m[41m[m
+[32m+[m[32m    }[m[41m[m
+[32m+[m[32m    .about_me img {[m[41m[m
+[32m+[m[32m        margin-bottom: 5px;[m[41m[m
+[32m+[m[32m    }[m[41m[m
+[32m+[m[41m[m
+ }[m
+ [m
