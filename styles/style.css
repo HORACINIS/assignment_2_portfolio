@@ -162,20 +162,6 @@ input:checked + .slider:before {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header_title {
     width: max-content;
     font-size: 2em;
@@ -271,6 +257,13 @@ ul.menu {
     animation: nav-items-scale 0.5s linear forwards;
 }
 /* mobile menu version will be displayed when list items contain both nav_item and active classes */
+
+
+
+
+
+
+
 
 @keyframes nav-items-scale {
     0% {
@@ -398,6 +391,9 @@ ul.menu {
     } 
 } 
 /* making the icons in the contact me page bounce when hovering over them */
+
+
+
 
 
 /* tablet & mobile view */
