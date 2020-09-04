@@ -33,14 +33,13 @@ const line_acrossClass = body.querySelector('.line_across');
 
 const changeTheme_btn = body.querySelector('.checkbox_btn');
 
-function changeBackgroundColor(element, colour) {
-    if (element) {
-        element.style.backgroundColor = colour;
-    }
-}
-
 changeTheme_btn.addEventListener('change', () => {
-    let checkbtnStatus;
+
+    function changeBackgroundColor(element, colour) {
+        if (element) {
+            element.style.backgroundColor = colour;
+        }
+    }
 
     if (changeTheme_btn.checked) {
         changeBackgroundColor(navElement, '#0099ff');
@@ -48,23 +47,11 @@ changeTheme_btn.addEventListener('change', () => {
         changeBackgroundColor(containerClass, '#0099ff');
         changeBackgroundColor(blogs_listClass, '#0066ff');
         changeBackgroundColor(line_acrossClass, 'darkBlue');
-        changeTheme_btn.checked = true;
     } else {
         changeBackgroundColor(navElement, '#ffb300');
         changeBackgroundColor(intro_textClass, '#ffb300');
         changeBackgroundColor(containerClass, '#ffb300');
         changeBackgroundColor(blogs_listClass, '#ffb300');
         changeBackgroundColor(line_acrossClass, 'red');
-        changeTheme_btn.checked = false;
     }
-
-    changeTheme_btn.ckecked = checkbtnStatus;
 });
-
-
-
-
-// #ffb300   YELLOW
-// #0066ff   RED
-// #0099ff    BLUE
-
