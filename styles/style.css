@@ -12,7 +12,7 @@ nav {
     background-color: #ffb300;
     padding: 5px 20px;
 }
-/* parent element for navigation list items */
+/* parent element for navigation list items changing colour and adding padding */
 
 ul.menu {
     list-style-type: none;
@@ -60,6 +60,7 @@ ul.menu li a {
 
 .name a {
     font-size: 20px;
+    filter: drop-shadow(8px 8px 10px black);    
 }
 /* increasing default font size of 16px to 20px for name */
 
@@ -86,16 +87,7 @@ ul.menu li a {
 
 
 
-
-
-
-
-
-
-
-
-
-/* The switch - the box around the slider */
+/* Below is the checkbox button properties for changing the theme when clicked on it */
 .switch {
     position: relative;
     display: inline-block;
@@ -103,15 +95,15 @@ ul.menu li a {
     height: 34px;
     margin-top: 10px;
 }
+/* The switch - the box around the slider */
 
-/* Hide default HTML checkbox */
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
+/* Hide default HTML checkbox */
 
-/* The slider */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -122,7 +114,7 @@ ul.menu li a {
     background-color: #ccc;
     transition: .4s;
 }
-
+/* The slider */
 .slider:before {
     position: absolute;
     content: "";
@@ -133,33 +125,22 @@ ul.menu li a {
     background-color: white;
     transition: .4s;
 }
-
 input:checked + .slider {
     background-color: #2196F3;
 }
-
 input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
 }
-
 input:checked + .slider:before {
     transform: translateX(26px);
 }
-
-/* Rounded sliders */
 .slider.round {
     border-radius: 34px;
 }
-
 .slider.round:before {
     border-radius: 50%;
 }
-
-
-
-
-
-
+/* Rounded sliders */
 
 
 .header_title {
@@ -179,6 +160,7 @@ input:checked + .slider:before {
     /* Adjust as needed */
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
+/* animated header title that is presented in all pages */
 @keyframes typing {
     from {
         width: 0%;
@@ -204,6 +186,7 @@ input:checked + .slider:before {
 /* adding top and bottom margins to main headers */
 
 
+
 /* BELOW - mobile menu bar (hidden when in desktop view)*/
 ul.menu {
     display: flex;
@@ -222,6 +205,7 @@ ul.menu {
 .toggle {
     cursor: pointer;
 }
+/* pointer displays when hovering over it */
 
 .menu_bar {
     background-color: #ff0000;
@@ -231,7 +215,6 @@ ul.menu {
     width: 18px;
 }
 /* hamburger menu - middle line */
-
 .menu_bar::before, .menu_bar::after {
     background-color: red;
     content: "";
@@ -258,13 +241,6 @@ ul.menu {
 }
 /* mobile menu version will be displayed when list items contain both nav_item and active classes */
 
-
-
-
-
-
-
-
 @keyframes nav-items-scale {
     0% {
         transform: scaleY(0.1);
@@ -276,6 +252,7 @@ ul.menu {
         transform: scaleY(1);
     }
 }
+/* menu items will scale when page loads */
 
 .commandLine_img {
     display: block;
@@ -284,16 +261,19 @@ ul.menu {
     width: 100px;
     animation: bounce 1.2s;
 }
-/* command line icon in home page, centered */
+/* command line icon in home page, centered, it has bouncing effect when page loads*/
 
 .intro_text {
     background-color: #ffb300;
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
+    filter: drop-shadow(8px 8px 10px gray); 
 }
+/* this is the animated intro text that is placed in the home page */
+
 .intro_text div {
-    animation: intro-text-zoomin 4s linear forwards;
+    animation: intro-text-zoomin 4s linear forwards; 
 }
 @keyframes intro-text-zoomin{
     0% {
@@ -324,13 +304,14 @@ ul.menu {
     background-color: #ffb300;
     width: 100%;
     padding: 10px;
-
 }
+/* this is the list of blog posts in the Blog page aligned in a column with yellow background*/
 
 .blog_box {
     text-align: center;
     margin-bottom: 20px;
 }
+/* these are the div items inside of .blogs_list */
 
 .blog_box img{
     width: 80%;
@@ -338,25 +319,31 @@ ul.menu {
     filter: grayscale(100%) drop-shadow(8px 8px 10px black);
     transition: 0.90s;
 }
+/* these are the properties for the image in the list of blog posts (inside a div with class .blog_box) */
+/* images have been set to have gray colour */
 
 .blog_box img:hover {
     filter: grayscale(0%);
     transform: scale(0.95, 0.95);
 }
+/* animation given to the images in the blog page,  they're colour will change back to normal and they will get zoomed out when hovering over*/
+
 
 .blog_post {
     text-align: center;
     margin: 20px;
 }
-
+/* these properties are for the actual blog posts - all blog posts will be aligned in the center og the page*/
 .blog_post img {
     display: inline-block;
     width: 100%;
 }
+/* setting the images in the blog posts */
 
 .blog_post section {
     margin-bottom: 30px;
 }
+/* adding some margin at the bottom of each blog post */
 
 .container {
     display: flex;
@@ -364,11 +351,12 @@ ul.menu {
     flex-wrap: nowrap;
     background-color: #ffb300;
     margin-bottom: 40px;
+    filter: drop-shadow(8px 8px 10px gray); 
 }
 .container div {
     margin: 20px auto;
-    /* width: 50%; */
     padding: 10px;
+    filter: drop-shadow(8px 8px 10px gray);    
 }
 .container a:link, .container a:visited {
     color: red;
@@ -390,7 +378,7 @@ ul.menu {
         transform: translateY(-15px);
     } 
 } 
-/* making the icons in the contact me page bounce when hovering over them */
+/* making the icons in the contact me and skills pages bounce when hovering over them */
 
 
 
@@ -412,7 +400,7 @@ ul.menu {
 
     .intro_text {
         padding-top: 150px;
-        padding-bottom: 150px;
+        padding-bottom: 150px;   
     }
 }
 
@@ -475,3 +463,8 @@ ul.menu {
 
 }
 
+
+
+.changeColour_1 {
+    background-color: #0099ff !important
+}

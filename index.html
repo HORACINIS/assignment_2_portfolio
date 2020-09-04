@@ -17,7 +17,8 @@
 <body>
 
     <header>
-        <nav>
+        <!-- declaring menu bar and its items -->
+        <nav>  
             <ul class="menu">
                 <li class="name"><a href="#">Horacio Moran</a></li>
                 <li class="nav_item"><a href="pages/about_me.html">About Me</a></li>
@@ -27,11 +28,14 @@
                 <li class="toggle"><span class="menu_bar"></span></li>
             </ul>
         </nav>
+        <!-- this is the line that is animated across from left to right -->
         <div class="line_across"></div>
     </header>
 
     <main>
         <section>
+
+            <!-- this is the check button created for changing the theme to blue -->
             <div>
                 <label class="switch">
                     <input type="checkbox" class="checkbox_btn">
@@ -39,11 +43,13 @@
                 </label>
             </div>
 
+            <!-- In the header we have the command line icon and the animated title with the typing effect -->
             <header>
                 <img class="commandLine_img" src="images/terminal_256px.png">
                 <h1 class="header_title">Portfolio</h1>
             </header>
 
+            <!-- This is the intro text where I introduce myself and it has the blur and scale animation effects -->
             <section class="intro_text">
                 <div>
                     <h1>Hi, my name is HORACIO MORAN,</h1>
@@ -56,7 +62,8 @@
         </section>
     </main>
 
-
+    <!-- This javascript file will do the drop down effect with the hamburguer menu when in mobile view
+    It will also change the theme colour to blue when clicking the checkhed button which I placed on the left side of all pages -->
     <script src="js/nav_bar_functionality.js"></script>
 
 </body>

@@ -21,7 +21,7 @@ menu_bar.addEventListener('click', (event) => {
 });
 
 
-
+//Getting the checkbox to change the colour of the items when clicked on
 const body = document.querySelector('body');
 
 const navElement = body.querySelector('nav');
