@@ -353,22 +353,27 @@ ul.menu {
     margin-bottom: 40px;
     filter: drop-shadow(8px 8px 10px gray); 
 }
+
 .container div {
     margin: 20px auto;
     padding: 10px;
     filter: drop-shadow(8px 8px 10px gray);    
 }
+
 .container a:link, .container a:visited {
     color: red;
 }
+/* defining the colour of the links in container. These will have colour value of red*/
 
 .container a:hover {
     color: blue;
 }
+/* the links in the container class will change to blue when they are hovered over */
 
 .container.bounce_effect img:hover {
     animation: bounce 0.8s linear;
 }
+/* The images inside of the container class will have a bounce animation effect when hovered over them */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
     40% {
@@ -378,7 +383,6 @@ ul.menu {
         transform: translateY(-15px);
     } 
 } 
-/* making the icons in the contact me and skills pages bounce when hovering over them */
 
 
 
@@ -393,15 +397,18 @@ ul.menu {
     .name {
         flex: 1;
     }
+    /* arranging the menu items */
 
     .blog_post div {
         max-width: 90%;
     }
+    /* changing the width of the div  */
 
     .intro_text {
         padding-top: 150px;
         padding-bottom: 150px;   
     }
+    /* giving the intro_text class padding both top and bottom */
 }
 
 @media all and (min-width:768px) {
@@ -419,6 +426,7 @@ ul.menu {
     ul.name {
         font-size: 1.2em;
     }
+    /* increases the size of my name in the menu bar */
 
     ul.menu li {
         padding: 15px 10px;
@@ -431,6 +439,7 @@ ul.menu {
     .blogs_list {
         flex-wrap: nowrap;
     }
+
     .blog_box {
         width: auto;
         height: auto;
@@ -461,10 +470,4 @@ ul.menu {
         word-spacing: 3px;
     }
 
-}
-
-
-
-.changeColour_1 {
-    background-color: #0099ff !important
 }
