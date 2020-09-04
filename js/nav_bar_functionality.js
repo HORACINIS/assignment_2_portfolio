@@ -19,3 +19,38 @@ menu_bar.addEventListener('click', (event) => {
         }
     }
 });
+
+
+
+
+
+
+
+const theBody = document.querySelector('body');
+
+const navElement = theBody.querySelector('nav');
+const intro_textClass = theBody.querySelector('.intro_text');
+const containerClass = theBody.querySelector('.container');
+const blogs_listClass = theBody.querySelector('.blogs_list');
+const line_acrossClass = theBody.querySelector('.line_across');
+
+
+function changeBackgroundColor(element, colour) {
+    if (element) {
+        element.style.backgroundColor = colour;
+    }    
+}
+
+changeBackgroundColor(navElement, '#0099ff');
+
+changeBackgroundColor(intro_textClass, '#0099ff');
+changeBackgroundColor(containerClass, '#0099ff');
+changeBackgroundColor(blogs_listClass, '#0066ff');
+changeBackgroundColor(line_acrossClass, 'darkBlue');
+
+
+
+
+// #ffb300   YELLOW
+// #0066ff   RED
+// #007CBE    BLUE
